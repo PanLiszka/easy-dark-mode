@@ -1,0 +1,50 @@
+/* https://www.radix-ui.com/colors */
+@import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/gray.css");
+@import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/gray-dark.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: var(--gray-1);
+    color: var(--gray-12);
+    margin: 20px;
+}
+
+#change-theme-button {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--gray-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#change-theme-button svg {
+    fill: var(--gray-11);
+}
+
+#change-theme-button svg:last-child {
+    display: none;
+}
+
+.dark #change-theme-button svg:first-child {
+    display: none;
+}
+
+.dark #change-theme-button svg:last-child {
+    display: block;
+}
